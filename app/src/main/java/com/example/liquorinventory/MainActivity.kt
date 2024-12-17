@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
 
     private fun addTestLiquor() {
         val liquorItem = hashMapOf(
-            "name" to "Whiskey", "type" to "Bourgon", "quantity" to 10, "price" to 49.99
+            "name" to "Whiskey", "type" to "Bourbon", "quantity" to 10, "price" to 49.99
         )
 
         db.collection("liquorItems").add(liquorItem).addOnSuccessListener { documentReference ->
